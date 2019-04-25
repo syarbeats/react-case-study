@@ -1,25 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import UserRegister from "./component/user_register";
+import UserList from "./component/list_user";
+
+import HeaderMenu from './component/HeaderMenu';
+import Header from './component/Header';
+import MainContent from './component/MainContent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        {/*<div className="container">
+          <main>
+            <div className="row">
+              <div className="col-md-12">
+                <UserRegister/>
+              </div>
+            </div>
+              <div className="row">
+                  <div className="col-md-12">
+                      <UserList/>
+                  </div>
+              </div>
+          </main>
+        </div>*/}
+          <div>
+              <HeaderMenu/>
+              <Header/>
+              <MainContent/>
+          </div>
+      </div>
   );
 }
 
