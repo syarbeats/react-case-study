@@ -4,6 +4,7 @@ import RegisterUser from '../component/user_register';
 import UserList from '../component/list_user';
 import Index from '../component/Index';
 import EditUser from '../component/edit_user';
+import DeleteUser from "../component/delete_user";
 
 function AppRouter() {
     return (
@@ -12,7 +13,8 @@ function AppRouter() {
                 <Route path="/" exact component = {Index} />
                 <Route path="/user/register" exact component = { RegisterUser } />
                 <Route path="/user/list" exact component = {UserList} />
-                <Route path="/users/edit/:userId" exact component = {EditUser}/>:
+                <Route path="/user/edit/:id" exact component = {EditUser}/>
+                <Route path="/user/delete/:id" exact component = {DeleteUser}/>
             </div>
         </Router>
     );

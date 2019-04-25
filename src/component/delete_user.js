@@ -1,6 +1,6 @@
 import React from 'react';
 
-class EditUser extends React.Component{
+class DeleteUser extends React.Component{
 
     constructor(props){
         super(props);
@@ -18,4 +18,4 @@ class EditUser extends React.Component{
     }
 }
 
-export default EditUser;
+export default DeleteUser;

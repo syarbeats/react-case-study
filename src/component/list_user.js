@@ -69,8 +69,8 @@ class TableRow extends React.Component{
                 <td>{this.props.data.email}</td>
                 <td>{this.props.data.role}</td>
                 <td>{this.props.data.enabled}</td>
-                <td><Link to={'/user/edit/'+this.props.data.id} className="btn btn-info" activeClassName="current">Edit</Link></td>
-                <td><Link to={'/user/delete/'+this.props.data.id} className="btn btn-info" activeClassName="current">Delete</Link></td>
+                <td><Link to={'/user/edit/'+this.props.data.id} className="btn btn-info" >Edit</Link></td>
+                <td><Link to={'/user/delete/'+this.props.data.id} className="btn btn-info">Delete</Link></td>
             </tr>
         );
     }
